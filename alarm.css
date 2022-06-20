@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--backg: rgba(0, 0, 0, 0.932);
+	--divC: #24d66e;
+	--setC: #000000;
+}
+body {
+	background: var(--backg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	background-color: var(--divC);
+	width: 25%;
+	height: 50%;
+	border-radius: 5px;
+	box-shadow: rgba(56, 194, 28, 0.733) 0 0 20px 5px;
+}
+.set-alarm {
+	background: var(--setC);
+	border-radius: 5px;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	cursor: pointer;
+}
+.selectors {
+	background: transparent;
+	border: none;
+	height: 40px;
+	width: 80px;
+	margin-right: 5px;
+}
+#date-data {
+	color: var(--setC);
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+[name="alarm-outline"] {
+	width: 70px;
+	height: 70px;
+	color: var(--setC);
+}
+@keyframes scale { 
+	50% {
+		width: 60px;
+	}
+	100% {
+		width: 70px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	#date-data {
+		font-weight: bold;
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+}
